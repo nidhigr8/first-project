@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks Academy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #F9FAFB;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4F46E5, #06B6D4);
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #4F46E5, #06B6D4);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            background: #F59E0B;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* COURSES */
+        .courses {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            margin-bottom: 30px;
+            color: #111827;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #4F46E5;
+        }
+
+        .card button {
+            margin-top: 10px;
+            background: #06B6D4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Teks Academy</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Build Your Career with Industry Skills</h2>
+    <p>Learn AWS, DevOps, Python, Data Science & more</p>
+    <button>Enroll Now</button>
+</section>
+
+<section class="courses">
+    <h2>Our Popular Courses</h2>
+
+    <div class="course-container">
+
+        <div class="card">
+            <h3>AWS & DevOps</h3>
+            <p>Learn CI/CD, Docker, Kubernetes, Terraform</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Python Full Stack</h3>
+            <p>Frontend + Backend + Real-time Projects</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Machine Learning, AI, Analytics</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, Ads, Social Media Marketing</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Software Testing</h3>
+            <p>Manual + Automation Testing Tools</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Salesforce</h3>
+            <p>Admin & Developer Certification Training</p>
+            <button>View Details</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Teks Academy | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
